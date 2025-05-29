@@ -1,0 +1,11 @@
+.body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio2{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+}

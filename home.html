@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div><h1>Calculadora de Operaciones Aritméticas</h1></div>
-    <div>
-        <p><input type="text" class="num1" placeholder="Ingrese un numero"></p>
-        <p><input type="text" class="num2" placeholder="Ingrese otro numero"></p>
-        <!--Botones de operaciones-->
-        <button>+</button>
-        <button>-</button>
-        <button>X</button>
-        <button>÷</button>
-        <button>=</button>
-        <!--Botones de numeros-->
+    <section class="layout">
+    <div class="header">
+        <h1>Calculadora de Operaciones Aritméticas</h1>
+    </div>
+    <br>
+    <div class="main">
+        <!--Entradas-->
+        <p><input type="number" id="numero1" placeholder="Ingrese un numero"></p>
+        <p><input type="number" id="numero2" placeholder="Ingrese otro numero"></p>
 
+        <!--Botones de operaciones-->
+        <button onclick="seleccionarOperacion('suma')">+</button>
+        <button onclick="seleccionarOperacion('resta')">-</button>
+        <button type="button" onclick="seleccionarOperacion('producto')">X</button>
+        <button onclick="seleccionarOperacion('cociente')">÷</button>
+        
+        <!--Botón de resultado-->
+        <button type="button" onclick="operar()">=</button>
+        <!--Impresión de resultado-->
+        <p><input type="text" id="resultado" readonly></p>
+            
+        
+
+        <!--Botones de numeros-->
+        <!--Pendiente en js...-->
         <div>
             <button>2</button>
             <button>3</button>
@@ -31,6 +46,7 @@
             <button>0</button>
         </div>
     </div>
+    </section>
     
 </body>
 </html>

@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="sript.js"></script>
-    <title>Document</title>
+    <title>CALCULADORA ARITMÉTICA</title>
 </head>
 <body>
-    <section class="layout">
 
     <div class="header">
         <h1>Calculadora aritmética</h1>
     </div>
 
     <div class="main">
-    <h2>Inicio de Sesión</h2>
-        <form>
-            <p>Usuario <input type="text" id="usuario" placeholder="Ingrese su nombre de usuario"></p>
-            <p>Contraseña <input type="password" id="clave" placeholder="Ingrese su contraseña"></p>
+        <div class="login">
+            <h2>Inicio de Sesión</h2>
+            <div class="ContenedorUsuarioClave">
+            <form>
+                <!--Ingreso de datos-->
+                <p>Usuario <input type="text" id="usuario" placeholder="Ingrese su nombre de usuario"></p>
+                <p>Contraseña <input type="password" id="clave" placeholder="Ingrese su contraseña"></p>
 
-        </form>
-        <button onclick="validar()">Ingresar</button>
+            </form>
+            </div>
+            <!--Botoón de ingreso de datos-->
+            <button class="ingresar" onclick="validar()">Iniciar Sesión</button>
+        </div>
     </div>
+
     <div class="footer"></div>
-</section>
 
 </body>
 </html>

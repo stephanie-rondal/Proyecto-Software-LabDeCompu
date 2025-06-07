@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js"></script>
+    <title>CALCULADORA ARITMÉTICA</title>
 </head>
 <body>
-    <div>
-        <h1>Inicio de Sesión</h1>
-        <form>
-            <p><input type="text" class="nombre" placeholder="Ingrese su nombre de usuario"></p>
-            <p><input type="password" class="contra" placeholder="Ingrese su contraseña"></p>
-        </form>
+
+    <div class="header">
+        <h1>Calculadora aritmética</h1>
     </div>
+
+    <div class="main">
+        <div class="login">
+            <h2>Inicio de Sesión</h2>
+            <div class="ContenedorUsuarioClave">
+            <form>
+                <!--Ingreso de datos-->
+                <p>Usuario <input type="text" id="usuario" placeholder="Ingrese su nombre de usuario"></p>
+                <p>Contraseña <input type="password" id="clave" placeholder="Ingrese su contraseña"></p>
+
+            </form>
+            </div>
+            <!--Botoón de ingreso de datos-->
+            <button class="ingresar" onclick="validar()">Iniciar Sesión</button>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
 </body>
 </html>

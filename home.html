@@ -3,16 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js"></script>
+    <title>CALCULADORA ARITMÉTICA</title>
 </head>
 <body>
-    <div><h1>Instagram</h1></div>
-    <div>
-        <img src=""> 
-        <img src="">
-        <img src="">
-        <img src="" alt="">
+    <div class="header">
+        <h1>Calculadora Aritmética</h1>
     </div>
     
+    <div class="main">
+        <div class="instrucciones">
+            <p class="textoInstrucciones">INSTRUCCIONES:</p>
+            <p>La calculadora solo realiza operaciones aritméticas (suma, resta, multiplicación y división) entre dos números enteros. </p>
+            <ul>
+                <li>En el campo <strong>Número 1</strong> ingresar el primer número haciendo click en el botón numérico que desee y (se mostrará en pantalla).</li>
+                <li>En el campo <strong>Número 2</strong> ingresar el sgundo número haciendo click en el botón numérico que desee (se mostrará en pantalla).</li>
+                <li>Luego, hacer click en el botón de la operación que desee realizar con los dos numeros seleccionado (no se mostrará en pantalla).</li>
+                <li>Haga click en el botón = para realizar la operación e imprimir el resultado en el campo <strong>Resultado</strong>.</li>
+                <li>Si desea realizar otra operación puede limpiar los campos con el botón C.</li>
+            </ul>
+        </div>
+
+        <div class="Calculadora">
+            <div class="Pantalla">
+                <!--Entradas-->
+                <input type="text" id="numero1" onclick="seleccionarCampo('numero1')" placeholder="Número 1">
+                <input type="text" id="numero2" onclick="seleccionarCampo('numero2')" placeholder="Número 2">
+                
+                <!--Salidas / Impresión de resultados-->
+                <p><input type="text" class="pantalla" id="resultado" placeholder="Resultado" readonly></p>
+            </div>
+
+            <div class="botones">
+                <div class="numeros">
+                    <!--Botones de numeros-->
+                    <button onclick="agregarNumero('9')">9</button>
+                    <button onclick="agregarNumero('8')">8</button>
+                    <button onclick="agregarNumero('7')">7</button>
+                    <button onclick="agregarNumero('6')">6</button>
+                    <button onclick="agregarNumero('5')">5</button>
+                    <button onclick="agregarNumero('4')">4</button>
+                    <button onclick="agregarNumero('3')">3</button>
+                    <button onclick="agregarNumero('2')">2</button>
+                    <button onclick="agregarNumero('1')">1</button>
+                    <button onclick="agregarNumero('0')">0</button>
+                </div>
+
+                <div class="operaciones">
+                    <!--Botones de operaciones-->
+                    <button onclick="seleccionarOperacion('suma')">+</button>
+                    <button onclick="seleccionarOperacion('resta')">-</button>
+                    <button onclick="seleccionarOperacion('producto')">X</button>
+                    <button onclick="seleccionarOperacion('cociente')">÷</button>
+                    
+                    <!--Botón de operar-->
+                    <button onclick="operar()">=</button>
+                    <!--Botón de limpiar-->
+                    <button onclick="limpiar()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

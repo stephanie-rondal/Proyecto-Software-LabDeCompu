@@ -8,45 +8,57 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="layout">
     <div class="header">
         <h1>Calculadora de Operaciones Aritméticas</h1>
     </div>
-    <br>
+    
     <div class="main">
-        <!--Entradas-->
-        <p><input type="number" id="numero1" placeholder="Ingrese un numero"></p>
-        <p><input type="number" id="numero2" placeholder="Ingrese otro numero"></p>
+        <div class="Calculadora">
 
-        <!--Botones de operaciones-->
-        <button onclick="seleccionarOperacion('suma')">+</button>
-        <button onclick="seleccionarOperacion('resta')">-</button>
-        <button type="button" onclick="seleccionarOperacion('producto')">X</button>
-        <button onclick="seleccionarOperacion('cociente')">÷</button>
-        
-        <!--Botón de resultado-->
-        <button type="button" onclick="operar()">=</button>
-        <!--Impresión de resultado-->
-        <p><input type="text" id="resultado" readonly></p>
+            <div class="ContenedorPantalla">
+            <!--Entradas-->
+            <input type="text" class="pantalla" id="numero1" onclick="seleccionarCampo('numero1')" placeholder="Número 1">
+            <input type="text" class="pantalla" id="numero2" onclick="seleccionarCampo('numero2')" placeholder="Número 2">
             
-        
+            
+            <!--Salidas / Impresión de resultados-->
+            <p><input type="text" class="pantalla" id="resultado" readonly></p>
+            </div>
 
-        <!--Botones de numeros-->
-        <!--Pendiente en js...-->
-        <div>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>1</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
+        <div class="botones">
+            <div class="numeros">
+                <!--Botones de numeros-->
+
+                <button onclick="agregarNumero('9')">9</button>
+                <button onclick="agregarNumero('8')">8</button>
+                <button onclick="agregarNumero('7')">7</button>
+                <button onclick="agregarNumero('6')">6</button>
+                <button onclick="agregarNumero('5')">5</button>
+                <button onclick="agregarNumero('4')">4</button>
+                <button onclick="agregarNumero('3')">3</button>
+                <button onclick="agregarNumero('2')">2</button>
+                <button onclick="agregarNumero('1')">1</button>
+                <button onclick="agregarNumero('0')">0</button>
+            </div>
+
+            <div class="operaciones">
+                <!--Botones de operaciones-->
+                <button onclick="seleccionarOperacion('suma')">+</button>
+                <button onclick="seleccionarOperacion('resta')">-</button>
+                <button onclick="seleccionarOperacion('producto')">X</button>
+                <button onclick="seleccionarOperacion('cociente')">÷</button>
+                
+                <!--Botón de operar-->
+                <button onclick="operar()">=</button>
+
+                <!--Botón de limpiar-->
+                <button onclick="limpiar()">C</button>
+            </div>
+
+            
+        </div>
         </div>
     </div>
-    </section>
     
 </body>
 </html>

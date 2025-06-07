@@ -1,28 +1,77 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    ;
-
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;    
 }
 
+.header{
+    display: flex; /* Habilita el posicionamiento flexible*/
+    justify-content: center; /* Posiciona el contenido en el centro del eje horizontal */
+    align-items: center; /* Posiciona el contenido en el centro del eje vertical*/
+    height: 150px;
+    width: 100%;
+}
 
 h1{
     text-align: center;
 }
 
 .main{
-    background-color: white;
-    width: 500px;
-    height: 300px;
+    height: 700px;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.Calculadora{
+    background-color: rgb(26, 26, 27);
+    width: 370px;
+    height: 500px;
     padding: 10px;
-    margin: 10px;
     border-radius: 4%;
+    border-style:solid;
+}
+
+.ContenedorPantalla{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.numeros{
+    width: 60%;
+}
+
+.operaciones{
+    width: 40%;
+    text-align: center;
+}
+
+input{
+    height: 40px;
+    width: 60px;
+    border-color: none;
+    margin: 10px;
+    background-color: rgb(117, 117, 117);
+    border-style: hidden;
 }
 
 button{
-    border-radius: 4%;
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    background-color: rgb(63, 63, 65);
+    border-radius: 20%;
+    border-color:rgb(26, 26, 27);
+    border-style:ridge;
     color: white;
-    background-color: rgb(91, 107, 186);
 }
